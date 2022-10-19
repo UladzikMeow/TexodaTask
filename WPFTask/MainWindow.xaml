@@ -36,6 +36,5 @@
         </DataGrid>
         <lvc:CartesianChart Grid.Column="1" DataContext="{Binding SelectedUser}" Series="{Binding Converter={StaticResource SeriesCollectionConverter}}" />
         <Button Grid.Row="2" Command="{Binding JSONSerializationCommand}" CommandParameter="{Binding SelectedUser}" Content="Получить данные JSON"/>
-        <Button Grid.Row="2" Command="{Binding XMLSerializationCommand}" CommandParameter="{Binding SelectedUser}" Content="Получить данные XML"/>
     </Grid>
 </Window>

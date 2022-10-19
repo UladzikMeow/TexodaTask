@@ -34,12 +34,10 @@ namespace WPFTask
         }
         DataContext dataContext = new DataContext();
         public ICommand JSONSerializationCommand { get; }
-        public ICommand XMLSerializationCommand { get; }
         public ApplicationViewModel()
         {
             Users = dataContext.Users;
             JSONSerializationCommand = new DataJSONSerializationCommand();
-            XMLSerializationCommand = new DataXMLSerializationCommand();
         }
         public event PropertyChangedEventHandler? PropertyChanged;
         public void OnPropertyChanged([CallerMemberName] string prop = "")
